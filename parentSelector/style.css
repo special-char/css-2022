@@ -1,0 +1,34 @@
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 2rem;
+}
+
+.card > .card__image {
+  aspect-ratio: 3/2;
+  width: 200px;
+  background-color: coral;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.card > .card__content {
+  width: 400px;
+}
+
+.card.card--plain {
+  border-top: 4px solid coral;
+}
+
+.card:has(.card__image) {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card:not(:has(.card__image)) {
+  border-top: 4px solid coral;
+}
+
+/* parent selector has */

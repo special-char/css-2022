@@ -1,0 +1,26 @@
+.card {
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 1rem;
+}
+
+.card .card__field {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem 0;
+}
+
+.card .card__field > label {
+  margin-bottom: 0.2rem;
+}
+
+.card .card__field:has(#otherReason) {
+  display: none;
+}
+
+form:has(option[value="other"]:checked) .card__field:has(#otherReason) {
+  display: flex;
+}

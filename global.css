@@ -1,0 +1,38 @@
+:root {
+  --image-color-1: #bbaef5;
+  --image-color-2: #a6cce4;
+  --image-color-3: #f4cab2;
+  --image-color-4: #ebdcd0;
+  --image-color-5: #aeedc8;
+  --image-color-6: #efafc9;
+}
+body {
+  color: #848484;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
+i {
+  color: #848484;
+  height: 24px;
+  width: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #848484;
+}

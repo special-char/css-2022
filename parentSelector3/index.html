@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Selector example 3</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>We are sorry to see u leave</h2>
+      <p>can you please help us to know the reason?</p>
+      <form>
+        <div class="card__field">
+          <label for="reason">I am cancelling because</label>
+          <select name="reason" id="reason">
+            <option value="technicalDifficulty">Technical Difficulties</option>
+            <option value="humanError">Human Error</option>
+            <option value="other">Other(please reply below)</option>
+          </select>
+        </div>
+        <div class="card__field">
+          <label for="otherReason">Other Reason</label>
+          <input type="text" id="otherReason" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
